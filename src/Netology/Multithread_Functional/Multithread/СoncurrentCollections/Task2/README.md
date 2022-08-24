@@ -8,5 +8,5 @@
 - Напишите эмуляцию чтения и записи для каждой из мап в несколько потоков. Проведите оба эксперимента с замером времени и выведите результаты на консоль.
 - Попробуйте существенно увеличить или уменьшить количество добавляемых элементов для повторного эксперимента. В комментариях к задаче укажите как именно изменились результаты
 ## Наблюдения к задаче 2
-![Image alt](https://github.com/MsLFoxGit/ConcurrentCollectionsTask2/blob/68ec187f876e14248b29a82c72287e26066b5eeb/RunResultTask2.jpg)\
+![Image alt](https://github.com/MsLFoxGit/ConcurrentCollectionsTask2/blob/0b46a781c075b48c88c1bacb606090dcbc75f7b5/src/Netology/Multithread_Functional/Multithread/%D0%A1oncurrentCollections/Task2/screenshots/RunResultTask2.jpg)\
 Исходя из получнных результатов, можно сказать, что `ConcurrentHashMap` работает однозначно быстрее от 2 до 6 раз при высокой нагрузке с разными потоками одновременнно. Плюсом `Collections.synchronizedMap(new HashMap<>())` является работа преимущественно с одним потоком на запись/удаление элементов.
